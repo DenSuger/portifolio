@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<script type="text/javascript">
+
+let aluno = {
+	nome : prompt("digite seu nome"),
+	nota1 : Number(prompt("digite sua nota")),
+	nota2 : Number(prompt("digite sua nota"))
+};
+
+// aqui embaixo serão minhas notas
+let resultado_soma = (aluno.nota1 + aluno.nota2);
+let media = resultado_soma/2;
+confirm(`oi ${aluno.nome} sua media foi : ${media}`);
+//confirm "oi, " + aluno.nome + " sua soma foi: " + resultado_soma);
+
+//se a media for maior ou a 7, senao o reprovado
+//aaluno entre 5 e 6.9 estará de recuperação
+if(media >= 7){
+	prompt('aprovado ;3;');
+}
+else if (media >= 5 && media < 7){
+	prompt('recuperação :/');
+}
+else{
+	prompt('reprovado ;-;');
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+</head>
+<body>
+
+</body>
+</html>

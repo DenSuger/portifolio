@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>efeitos</title>
+
+	<style>
+		
+	#gif{
+		transition: 1s;
+	}
+
+
+	</style>
+
+
+
+	<script type="text/javascript">
+		
+		function brilho(){
+			let imagem  = document.querySelector('#foto');
+			image.style.opacity = '0.6';
+		}
+		function tirarBrilho(){
+			let imagem  = document.querySelector('#foto');
+			image.style.opacity = '1';
+		}
+		function mover(){
+			let imagem = document.querySelector('#gif');
+			imagem.style.marginLeft = '500px'
+		}
+
+
+
+
+	</script>
+
+</head>
+<body>
+<img id="foto" onmouseover="brilho()" onmouseleave="tirarBrilho()" src="http://www.visitgreece.gr/deployedFiles/StaticFiles/Photos/Generic%20Contents/Nisia/santorini_2_view_560.jpg">
+<button onclick= "window.print()">
+	Imprimir
+</button>
+<br/>
+<img id="gif" src="https://78.media.tumblr.com/622731495fca4c32b5c519f67ac8741a/tumblr_otel24WU2S1vyni53o1_500.gif">
+
+<button onclick="mover()">Mover</button>
+
+</body>
+</html>
